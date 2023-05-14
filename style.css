@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: hsl(257, 40%, 49%);
+}
+main{
+    background-image: url(images/bg-desktop.svg);
+    width: 100%;
+    min-height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 50px;
+}
+.logo{
+    align-self: flex-start;   
+}
+
+.hero{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+.hero img{
+    width: 100%;
+    display: block;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.text h1{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: 42px;
+}
+.text p{
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    font-size: 18px;
+    line-height: 140%;
+}
+.btn{
+    width: 40%;
+    height: 50px;
+    border-radius: 30px;
+    background-color: white;
+    border: none;
+    outline: none;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, .3);
+
+    font-family: 'Poppins', sans-serif;
+    color: hsl(300, 69%, 71%);
+    font-size: 18px;
+
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: hsl(300, 69%, 71%);
+
+    color: white;
+}
+
+.social{
+    align-self: flex-end;
+    display: flex;
+    gap: 20px;
+}
+
+.icon{
+    width: 20px;
+    height: 20px;
+    color: white;
+    border-radius: 50%;
+    padding: 5px;
+    border: 2px solid white;
+}
+
+.icon:hover{
+    color: hsl(300, 69%, 71%);
+    border: 2px solid hsl(300, 69%, 71%);
+}
+
+
+
+@media screen and (max-width: 768px) {
+    
+    
+    main{
+        background-image: url(images/bg-mobile.svg);
+        background-size:auto;
+        background-repeat: no-repeat;
+
+    }
+
+    .container{
+        padding: 30px 30px;
+    }
+
+    .logo{
+        align-self: flex-start;  
+        width: 50%; 
+    }
+
+    .logo img{
+        display: block;
+        width: 100%;
+    }
+
+    .hero{
+    flex-direction: column;
+    }
+
+    .text{
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+    }
+    .text h1{
+        font-size: 24px;
+    }
+    .text p{
+        font-size: 14px;
+    }
+    .btn{
+        width: 80%;
+    }
+    .social{
+        align-self: center;
+
+    }
+}
